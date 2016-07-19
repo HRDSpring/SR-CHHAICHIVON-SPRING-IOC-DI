@@ -19,17 +19,17 @@ public class CategoryController {
 	*/
 	
 	/*---Constructor Injection---*/
-	/*private CategoryDAO catdao;
+	private CategoryDAO catdao;
 	@Autowired
 	public CategoryController(CategoryDAO catdao) {
 		this.catdao = catdao;
-	}*/
-	/*---Setter Injection---*/
-	private CategoryDAO catdao;
-	
-	public void setCatDAO(CategoryDAO catedao){
-		this.catdao = catedao;
 	}
+	/*---Setter Injection---*/
+//	private CategoryDAO catdao;
+//	
+//	public void setCatDAO(CategoryDAO catedao){
+//		this.catdao = catedao;
+//	}
 	
 	@RequestMapping("/getcategory")
 	@ResponseBody
