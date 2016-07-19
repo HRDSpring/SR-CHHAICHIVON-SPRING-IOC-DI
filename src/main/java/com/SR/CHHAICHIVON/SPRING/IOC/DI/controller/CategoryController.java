@@ -27,6 +27,10 @@ public class CategoryController {
 	/*---Setter Injection---*/
 	private CategoryDAO catdao;
 	
+	public void setCatDAO(CategoryDAO catedao){
+		this.catdao = catedao;
+	}
+	
 	@RequestMapping("/getcategory")
 	@ResponseBody
 	public ArrayList<CategoryDTO> findAllCategory(){
